@@ -24,15 +24,28 @@ public class Main {
 
     // System.out.println(myBankAccount.getCustomerName() + " has a bank account with a balance of " + String.format("%.02f", myBankAccount.getAccountBalance()));
 
-    SimpleCalculator calculator = new SimpleCalculator();
+    // SimpleCalculator calculator = new SimpleCalculator();
 
-    calculator.setFirstNumber(11);
-    calculator.setSecondNumber(33);
+    // calculator.setFirstNumber(11);
+    // calculator.setSecondNumber(33);
 
-    System.out.println(calculator.getAdditionResult());
+    // System.out.println(calculator.getSecondNumber());
 
+    // System.out.println(calculator.getAdditionResult());
 
+    Person brian = new Person();
 
+    System.out.println(brian.getFullName());
+
+    brian.setFirstName("Brian");
+
+    System.out.println(brian.getFullName());
+
+    brian.setFirstName("Falasz");
+
+    System.out.println(brian.getFullName());
+
+    brian.setAge(33);
 
   }
 }
