@@ -1,6 +1,29 @@
 public class Main {
 
   public static void main(String args[]){
+
+
+    for(int i = 1; i <= 5; i++){
+
+      Student students = new Student(
+        "192838", 
+        switch(i){
+          case 1 -> "Madeleine";
+          case 2 -> "Brian";
+          case 3 -> "Hayes";
+          case 4 -> "Cosmo";
+          case 5 -> "Harry"; 
+          default -> "Anonymous";
+        },
+        "04/20/1990",
+        "Programming"
+      );
+
+
+      System.out.println(students);
+    }
+
+
     
     // BankAccount myBankAccount = new BankAccount();
 
@@ -47,15 +70,15 @@ public class Main {
 
     // brian.setAge(33);
 
-    Customer brian = new Customer();
+    // Customer brian = new Customer();
 
-    System.out.println(brian.getName());
+    // System.out.println(brian.getName());
 
-    System.out.println(brian.getCreditLimit());
+    // System.out.println(brian.getCreditLimit());
 
-    Customer madeleine = new Customer("Madeleine", "madeleine@example.com");
+    // Customer madeleine = new Customer("Madeleine", "madeleine@example.com");
 
-    System.out.println(madeleine.getCreditLimit());
+    // System.out.println(madeleine.getCreditLimit());
     
 
   }

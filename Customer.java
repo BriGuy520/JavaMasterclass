@@ -10,16 +10,15 @@ public class Customer {
     this.emailAddress = emailAddress;
   }
 
-  public Customer(){
-    this("Brian Falasz", 2000.00, "brian@example.com");
-  }
-
   public Customer(String customerName, String customerEmail){
-    this();
-    name = customerName;
-    emailAddress = customerEmail; 
+    this(customerName, 2000.00, customerEmail); 
+  }
+  
+  public Customer(){
+    this("Brian Falasz", "brian@example.com");
   }
 
+  
 
   public String getName(){
     return name;
