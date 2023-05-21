@@ -33,19 +33,30 @@ public class Main {
 
     // System.out.println(calculator.getAdditionResult());
 
-    Person brian = new Person();
+    // Person brian = new Person();
 
-    System.out.println(brian.getFullName());
+    // System.out.println(brian.getFullName());
 
-    brian.setFirstName("Brian");
+    // brian.setFirstName("Brian");
 
-    System.out.println(brian.getFullName());
+    // System.out.println(brian.getFullName());
 
-    brian.setFirstName("Falasz");
+    // brian.setFirstName("Falasz");
 
-    System.out.println(brian.getFullName());
+    // System.out.println(brian.getFullName());
 
-    brian.setAge(33);
+    // brian.setAge(33);
+
+    Customer brian = new Customer();
+
+    System.out.println(brian.getName());
+
+    System.out.println(brian.getCreditLimit());
+
+    Customer madeleine = new Customer("Madeleine", "madeleine@example.com");
+
+    System.out.println(madeleine.getCreditLimit());
+    
 
   }
 }
