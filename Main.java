@@ -1,29 +1,31 @@
 public class Main {
 
+  
   public static void main(String args[]){
+    
+    Wall newWall = new Wall(-1.25, -1.25);
+  
+    System.out.println(newWall.getArea());
+
+  //   for(int i = 1; i <= 5; i++){
+
+  //     Student students = new Student(
+  //       "192838", 
+  //       switch(i){
+  //         case 1 -> "Madeleine";
+  //         case 2 -> "Brian";
+  //         case 3 -> "Hayes";
+  //         case 4 -> "Cosmo";
+  //         case 5 -> "Harry"; 
+  //         default -> "Anonymous";
+  //       },
+  //       "04/20/1990",
+  //       "Programming"
+  //     );
 
 
-    for(int i = 1; i <= 5; i++){
-
-      Student students = new Student(
-        "192838", 
-        switch(i){
-          case 1 -> "Madeleine";
-          case 2 -> "Brian";
-          case 3 -> "Hayes";
-          case 4 -> "Cosmo";
-          case 5 -> "Harry"; 
-          default -> "Anonymous";
-        },
-        "04/20/1990",
-        "Programming"
-      );
-
-
-      System.out.println(students);
-    }
-
-
+  //     System.out.println(students);
+  //   }
     
     // BankAccount myBankAccount = new BankAccount();
 
