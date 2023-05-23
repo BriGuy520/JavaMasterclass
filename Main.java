@@ -3,9 +3,22 @@ public class Main {
   
   public static void main(String args[]){
     
-    Wall newWall = new Wall(-1.25, -1.25);
+    // Wall newWall = new Wall(-1.25, -1.25);
   
-    System.out.println(newWall.getArea());
+    // System.out.println(newWall.getArea());
+
+    Point first = new Point(6,5);
+    Point second = new Point(3, 1);
+
+    System.out.println("distance(0,0)= " + first.distance());
+
+    System.out.println("distance(second)= " + first.distance(second));
+
+    System.out.println("distance(2,2)= " + first.distance(2, 2));
+
+    Point point = new Point();  
+    
+    System.out.println("distance()= " + point.distance());
 
   //   for(int i = 1; i <= 5; i++){
 
