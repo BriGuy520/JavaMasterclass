@@ -7,7 +7,7 @@ public class SalariedEmployee extends Employee {
   
 
   public void retire(){
-    isRetired = true;
+    this.isRetired = true;
   }
   
 }

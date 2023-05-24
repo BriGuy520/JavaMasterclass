@@ -11,7 +11,7 @@ public class Worker {
   private String endDate;
 
   public Worker(){
-    this("Brian Falasz", "05-20-1990", "05-23-2023");
+    this("Brian Falasz", "1990-05-20", "2023-05-23");
   }
 
   public Worker(String name, String birthDate, String endDate){
