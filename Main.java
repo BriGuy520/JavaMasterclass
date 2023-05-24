@@ -2,6 +2,15 @@ public class Main {
 
   
   public static void main(String args[]){
+
+    Animal animal = new Animal("Cat", 4, true);
+
+    animalStuff(animal, "meow!");
+
+    Dog dog = new Dog();
+
+    animalStuff(dog, "woof!");
+
     
     // Wall newWall = new Wall(-1.25, -1.25);
   
@@ -20,19 +29,19 @@ public class Main {
     
     // System.out.println("distance()= " + point.distance());
 
-    Carpet carpet = new Carpet(3.5);
-    Floor floor = new Floor(2.75, 4.0);
+    // Carpet carpet = new Carpet(3.5);
+    // Floor floor = new Floor(2.75, 4.0);
 
-    Calculator calculator = new Calculator(floor, carpet);
+    // Calculator calculator = new Calculator(floor, carpet);
 
-    System.out.println("total= " + calculator.getTotalCost());
+    // System.out.println("total= " + calculator.getTotalCost());
 
-    carpet = new Carpet(1.5);
-    floor = new Floor(5.4, 4.5);
+    // carpet = new Carpet(1.5);
+    // floor = new Floor(5.4, 4.5);
 
-    calculator = new Calculator(floor, carpet);
+    // calculator = new Calculator(floor, carpet);
     
-    System.out.println("total= " + calculator.getTotalCost());
+    // System.out.println("total= " + calculator.getTotalCost());
 
   //   for(int i = 1; i <= 5; i++){
 
@@ -108,7 +117,13 @@ public class Main {
     // Customer madeleine = new Customer("Madeleine", "madeleine@example.com");
 
     // System.out.println(madeleine.getCreditLimit());
+  }
+
+  public static void animalStuff(Animal animal, String sound){
     
+    animal.animalInfo();
+    animal.animalNoise(sound);
+    System.out.println("-------------");
 
   }
 }
