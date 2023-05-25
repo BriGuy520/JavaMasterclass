@@ -8,10 +8,14 @@ public class Worker {
   
   private String name;
   private String birthDate;
-  private String endDate;
+  protected String endDate;
 
   public Worker(){
     this("Brian Falasz", "1990-05-20", "2023-05-23");
+  }
+
+  public Worker(String name, String endDate){
+    this(name, "1991-05-20", endDate);
   }
 
   public Worker(String name, String birthDate, String endDate){
@@ -32,9 +36,9 @@ public class Worker {
     return age.getYears();
   }
 
-  // public double collectPay(){
-  
-  // }
+  public double collectPay(){
+    return 0.0;
+  }
 
   public void terminate(String endDate){
     this.endDate = endDate;
