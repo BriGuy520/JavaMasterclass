@@ -6,9 +6,11 @@ public class Main {
 
     Car theCar = Car.getCar("Electric", "Tesla");
 
-    theCar.drive();
+    Car gas = new GasPoweredCar("Ford F-150");
 
-    
+    gas.startEngine();
+
+    theCar.drive();    
   }
   
 }

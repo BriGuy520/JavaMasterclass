@@ -15,4 +15,9 @@ public class ElectricCar extends Car {
     super.drive();
   } 
 
+  @Override
+  public void startEngine(){
+    super.startEngine();
+  } 
+
 }

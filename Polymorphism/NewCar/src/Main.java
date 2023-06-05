@@ -1,0 +1,28 @@
+package Polymorphism.NewCar.src;
+
+public class Main {
+
+  public static void main(String[] args) {
+    
+    NewCar car = new NewCar(8, "Base car");
+    car.startEngine();
+    car.accelerate();
+    car.brake();
+    
+    Mitsubishi mitsubishi = new Mitsubishi(6, "Outlander VRX 4WD");
+    mitsubishi.startEngine();
+    mitsubishi.accelerate();
+    mitsubishi.brake();
+    
+    Ford ford = new Ford(6, "Ford Falcon");
+    ford.startEngine();
+    ford.accelerate();
+    ford.brake();
+    
+    Holden holden = new Holden(6, "Holden Commodore");
+    holden.startEngine();
+    holden.accelerate();
+    holden.brake();
+  }
+  
+}
