@@ -12,15 +12,25 @@ public class NewCar {
     this.name = name;
   }
 
-  public void startEngine(){
-    System.out.println(this.getClass().getSimpleName() + " engine has started");
+  public String getName(){
+
+    return name;
   }
 
-  public void accelerate(){
-    System.out.println(this.getClass().getSimpleName() + " is accelerating");
+  public int getCylinders(){
+    
+    return cylinders;
   }
 
-  public void brake(){
-    System.out.println(this.getClass().getSimpleName() + " is braking");
+  public String startEngine(){
+    return this.getClass().getSimpleName() + " engine has started";
+  }
+
+  public String accelerate(){
+    return this.getClass().getSimpleName() + " is accelerating";
+  }
+
+  public String brake(){
+    return this.getClass().getSimpleName() + " is braking";
   }
 }
