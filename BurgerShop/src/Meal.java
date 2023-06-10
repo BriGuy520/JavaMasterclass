@@ -3,25 +3,25 @@ package BurgerShop.src;
 public class Meal {
 
   private Burger burger;
-  private Side side;
-  private Drink drink;
+  private Item side;
+  private Item drink;
 
 
   public Meal(){
     burger = new Burger();
-    side = new Side();
-    drink = new Drink();
+    side = new Item("Side", "Fries", "Small");
+    drink = new Item("Drink", "Diet", "Small");
   }
 
   public Burger getBurger(){
     return burger;
   }
 
-  public Side getSide(){
+  public Item getSide(){
     return side;
   }
 
-  public Drink getDrink(){
+  public Item getDrink(){
     return drink;
   }
 

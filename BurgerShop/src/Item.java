@@ -1,0 +1,48 @@
+package BurgerShop.src;
+
+public class Item {
+  
+  private String name;
+  private String type;
+  private String size;
+  private double price;
+
+  Item(String name, String type, String size){
+    this.name = name;
+    this.type = type;
+    this.size = size;
+    this.setPrice();
+  }
+
+  public void setPrice(){
+
+    if(name == "Side"){
+
+      if(size == "Small"){
+        this.price = 1.50;
+      } else if(size == "Medium"){
+        this.price = 2.25;
+      } else {
+        this.price = 2.75;
+      }
+
+    } else if(name == "Drink"){
+
+      if(size == "Small"){
+        this.price = 2.00;
+      } else if(size == "Medium"){
+        this.price = 2.75;
+      } else {
+        this.price = 3.25;
+      }
+
+    }
+ 
+  }
+
+  public String getType(){
+    return type;
+  }
+
+
+}
