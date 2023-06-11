@@ -43,6 +43,10 @@ public class Item {
     return type;
   }
 
+  public String getSize(){
+    return size;
+  }
+
   public double getPrice(){
     return price;
   }

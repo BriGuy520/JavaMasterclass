@@ -13,6 +13,12 @@ public class Meal {
     drink = new Item("Drink", "Diet", "Small");
   }
 
+  public Meal(Burger burger, Item side, Item drink){
+    this.burger = burger;
+    this.side = side;
+    this.drink = drink;
+  }
+
   public Burger getBurger(){
     return burger;
   }
@@ -26,7 +32,7 @@ public class Meal {
   }
 
   public void getCurrentMeal(){
-    System.out.printf("The current side is %s, drink is %s and burger is %s%n", side.getType(), drink.getType(), burger.getType());
+    System.out.printf("The current side is a %s %s, drink is a %s %s and burger is %s%n", side.getSize(), side.getType(), drink.getSize(), drink.getType(), burger.getType());
   }
 
 
