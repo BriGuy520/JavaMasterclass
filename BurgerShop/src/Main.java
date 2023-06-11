@@ -11,7 +11,8 @@ public class Main {
     Meal standard = new Meal();
 
     standard.getCurrentMeal();
-    
+
+    standard.totalPrice();
 
   }
   

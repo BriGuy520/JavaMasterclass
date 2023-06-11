@@ -3,9 +3,9 @@ package BurgerShop.src;
 public class Item {
   
   private String name;
-  private String type;
+  protected String type;
   private String size;
-  private double price;
+  protected double price;
 
   Item(String name, String type, String size){
     this.name = name;
@@ -37,12 +37,14 @@ public class Item {
       }
 
     }
- 
   }
 
   public String getType(){
     return type;
   }
 
+  public double getPrice(){
+    return price;
+  }
 
 }
