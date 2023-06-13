@@ -10,13 +10,13 @@ public class Main {
 
     Meal standard = new Meal();
 
-    Burger lettuce = new Toppings("Lettuce", 0.25);
-    Burger onions = new Toppings("Onions", 0.25);
-    Burger tomatoes = new Toppings("Tomotoes", 0.50);
-    Burger mushrooms = new Toppings("Mushrooms", 0.75);
-    Burger cheese = new Toppings("Cheese", 1.00);
-    Burger mayo = new Toppings("Mayo", 0.50);
-    Burger ketchup = new Toppings("Ketchup", 0.00);
+    Toppings lettuce = new Toppings("Lettuce", 0.25);
+    Toppings onions = new Toppings("Onions", 0.25);
+    Toppings tomatoes = new Toppings("Tomotoes", 0.50);
+    Toppings mushrooms = new Toppings("Mushrooms", 0.75);
+    Toppings cheese = new Toppings("Cheese", 1.00);
+    Toppings mayo = new Toppings("Mayo", 0.50);
+    Toppings ketchup = new Toppings("Ketchup", 0.00);
 
     standard.getCurrentMeal();
 
@@ -30,7 +30,13 @@ public class Main {
 
     deluxeMeal.getCurrentMeal();
     deluxeMeal.totalPrice();
+    
 
+    standard.getBurger().addTopping(onions);
+    standard.getBurger().addTopping(mushrooms);
+    standard.getBurger().addTopping(ketchup);
+
+    standard.totalPrice();
   }
-  
+
 }

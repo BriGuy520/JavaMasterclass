@@ -1,9 +1,13 @@
 package BurgerShop.src;
 
+import java.util.ArrayList;
+
 public class Burger {
 
   private String type;
   private double price;
+  private ArrayList<String> toppings = new ArrayList<>();
+
 
   public Burger(){
     this("Regular", 4.50);
@@ -20,5 +24,13 @@ public class Burger {
 
   public double getPrice(){
     return price;
+  } 
+
+  public void addTopping(Toppings topping){
+
+    toppings.add(topping.getType());
+
+    this.price += topping.getPrice();
+
   }
 }
