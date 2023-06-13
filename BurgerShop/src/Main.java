@@ -30,11 +30,20 @@ public class Main {
 
     deluxeMeal.getCurrentMeal();
     deluxeMeal.totalPrice();
+
+    deluxeBurger.addTopping(mayo);
+    deluxeBurger.addTopping(tomatoes);
+    deluxeBurger.addTopping(lettuce);
+
+    deluxeMeal.getCurrentMeal();
+    deluxeMeal.totalPrice();
     
 
     standard.getBurger().addTopping(onions);
     standard.getBurger().addTopping(mushrooms);
     standard.getBurger().addTopping(ketchup);
+
+    standard.getBurger().addTopping(cheese);
 
     standard.getCurrentMeal();
 

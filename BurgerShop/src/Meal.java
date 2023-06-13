@@ -35,7 +35,7 @@ public class Meal {
 
   public void getCurrentMeal(){
 
-    String currentToppings = String.join(", ", burger.getToppings());
+    String currentToppings = burger.getToppings().size() > 0 ? String.join(", ", burger.getToppings()) : "no";
 
     System.out.printf("The current side is a %s %s, drink is a %s %s and burger is %s with %s toppings. %n", side.getSize(), side.getType(), drink.getSize(), drink.getType(), burger.getType(), currentToppings);
   }

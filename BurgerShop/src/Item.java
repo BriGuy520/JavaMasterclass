@@ -38,7 +38,7 @@ public class Item {
 
     }
   }
-
+  
   public String getType(){
     return type;
   }

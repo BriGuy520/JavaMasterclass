@@ -32,9 +32,27 @@ public class Burger {
 
   public void addTopping(Toppings topping){
 
-    toppings.add(topping.getType());
+    final int toppingsCount =  getToppings().size();
 
-    this.price += topping.getPrice();
+    if(this.getType() == "Deluxe" && toppingsCount < 2){
+
+      toppings.add(topping.getType());
+    
+    } else if(this.getType() != "Deluxe" && toppingsCount < 3){
+
+      toppings.add(topping.getType());
+    
+    } else {
+
+      System.out.println("Cannot add anymore toppings.");
+    }
+
+
+    if(this.getType() != "Deluxe" && toppingsCount < 3){
+
+      this.price += topping.getPrice();
+    }
+
 
   }
 }
