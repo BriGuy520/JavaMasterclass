@@ -36,6 +36,8 @@ public class Main {
     standard.getBurger().addTopping(mushrooms);
     standard.getBurger().addTopping(ketchup);
 
+    standard.getCurrentMeal();
+
     standard.totalPrice();
   }
 

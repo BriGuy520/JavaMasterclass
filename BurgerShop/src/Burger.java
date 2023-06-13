@@ -26,6 +26,10 @@ public class Burger {
     return price;
   } 
 
+  public ArrayList<String> getToppings(){
+    return toppings;
+  }
+
   public void addTopping(Toppings topping){
 
     toppings.add(topping.getType());

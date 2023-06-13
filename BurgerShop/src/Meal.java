@@ -1,5 +1,7 @@
 package BurgerShop.src;
 
+import java.util.ArrayList;
+
 public class Meal {
 
   private Burger burger;
@@ -32,7 +34,10 @@ public class Meal {
   }
 
   public void getCurrentMeal(){
-    System.out.printf("The current side is a %s %s, drink is a %s %s and burger is %s%n", side.getSize(), side.getType(), drink.getSize(), drink.getType(), burger.getType());
+
+    String currentToppings = String.join(", ", burger.getToppings());
+
+    System.out.printf("The current side is a %s %s, drink is a %s %s and burger is %s with %s toppings. %n", side.getSize(), side.getType(), drink.getSize(), drink.getType(), burger.getType(), currentToppings);
   }
 
 
