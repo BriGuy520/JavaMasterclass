@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Compile Java",
+        "type": "shell",
+        "command": "javac -d Burgers src/*.java",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "Run Java",
+        "type": "shell",
+        "command": "java -classpath Burgers Main",
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        }
+      }
+    ]
+  }
