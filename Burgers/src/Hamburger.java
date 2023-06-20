@@ -44,5 +44,10 @@ public class Hamburger {
     this.addition4Name = addition4Name;
     this.addition4Price = addition4Price;
   }
+
+  public double itemizeHamburger(){
+
+    return this.addition1Price + this.addition2Price + this.addition3Price + this.addition4Price; 
+  }
   
 }
