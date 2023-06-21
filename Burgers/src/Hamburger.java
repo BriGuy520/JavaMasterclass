@@ -5,23 +5,25 @@ public class Hamburger {
   private String name;
   private String meat;
   private String breadRollType;
-  private double price;
+  protected double price;
 
   private String addition1Name;
-  private double addition1Price;
+  protected double addition1Price;
   private String addition2Name;
-  private double addition2Price;
+  protected double addition2Price;
   private String addition3Name;
   private double addition3Price;
   private String addition4Name;
   private double addition4Price;
 
 
-  public Hamburger(String name, String meat, String breadRollType, double price){
+  public Hamburger(String name, String meat, double price, String breadRollType){
     this.name = name;
     this.meat = meat;
-    this.breadRollType = breadRollType;
     this.price = price;
+    this.breadRollType = breadRollType;
+
+    System.out.printf("%s hamburger on a %s roll with %s, price is %.2f%n", name, breadRollType, meat, price);
   }
 
 
@@ -56,7 +58,7 @@ public class Hamburger {
 
   public double itemizeHamburger(){
 
-    return this.addition1Price + this.addition2Price + this.addition3Price + this.addition4Price; 
+    return this.price + this.addition1Price + this.addition2Price + this.addition3Price + this.addition4Price; 
   }
   
 }
