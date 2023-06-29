@@ -7,31 +7,41 @@ import java.util.Collections;
 public class Main {
 
   public static void main(String[] args) {
+
+    SortedArray sortArray = new SortedArray();
+
+    int[] newArr = sortArray.getIntegers(5);
+
+    sortArray.printArray(newArr);
+
+    newArr = sortArray.sortIntegers(newArr);
+
+    sortArray.printArray(newArr);
     
-    Integer[] arr = new Integer[5];
-    Random randomInt = new Random();
+  //   Integer[] arr = new Integer[5];
+  //   Random randomInt = new Random();
     
-    for(int i = 0; i < arr.length; i++){
+  //   for(int i = 0; i < arr.length; i++){
 
-      arr[i] = randomInt.nextInt(100);
-    }
+  //     arr[i] = randomInt.nextInt(100);
+  //   }
 
-    System.out.println(Arrays.toString(arr));
+  //   System.out.println(Arrays.toString(arr));
 
-    Arrays.sort(arr);
+  //   Arrays.sort(arr);
 
-    Integer[] arr2 = Arrays.copyOf(arr, arr.length);
+  //   Integer[] arr2 = Arrays.copyOf(arr, arr.length);
 
-    for(int j = arr2.length - 1; j >= 0; j--){
-      arr[j] = arr2[arr2.length - 1 - j]; 
-    }
+  //   for(int j = arr2.length - 1; j >= 0; j--){
+  //     arr[j] = arr2[arr2.length - 1 - j]; 
+  //   }
 
-    System.out.println("First Reverse Sort: ");
-    System.out.println(Arrays.toString(arr));
+  //   System.out.println("First Reverse Sort: ");
+  //   System.out.println(Arrays.toString(arr));
 
-    Arrays.sort(arr, Collections.reverseOrder());
-    System.out.println("Second Reverse Sort: ");
-    System.out.println(Arrays.toString(arr));
+  //   Arrays.sort(arr, Collections.reverseOrder());
+  //   System.out.println("Second Reverse Sort: ");
+  //   System.out.println(Arrays.toString(arr));
   }
   
 }
