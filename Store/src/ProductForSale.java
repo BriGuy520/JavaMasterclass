@@ -4,12 +4,28 @@ public abstract class ProductForSale {
     private double price;
     private String description;
 
+    public ProductForSale(String type, double price, String description){
+        this.type = type;
+        this.price = price;
+        this.description = description;
+    }
+
     public double getSalesPrice(int quantity){
         return price * quantity;
     }
 
     public void printLineItem(int quantity){
-        
+
     }
+
+    public String getDescription(){
+        return description;
+    }
+
+    public double getPrice(){
+        return price;
+    }
+
+    public abstract void showDetails();
 
 }
