@@ -15,7 +15,7 @@ public abstract class ProductForSale {
     }
 
     public void printLineItem(int quantity){
-        System.out.printf("%s %.2f %d", type, price, quantity);
+        System.out.printf("%s      %d       %.2f     %.2f%n", type, quantity, price, getSalesPrice(quantity));
     }
 
     public String getDescription(){

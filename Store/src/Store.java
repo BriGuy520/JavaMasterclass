@@ -21,6 +21,8 @@ public class Store {
         products.add(new Football());
 
         addItemToOrder(order, products.get(0), 3);
+        addItemToOrder(order, products.get(1), 2);
+
 
         System.out.println(order);
 
@@ -35,11 +37,23 @@ public class Store {
 
     public static void printOrder(ArrayList<OrderItem> order){
 
+        double total = 0;
+
+        System.out.printf("Item        Quantity     Price     Total%n%n");
+
         for(OrderItem item : order){
 
-            item.product().printLineItem(item.quantity);
+            item.product.printLineItem(item.quantity);
+
+            total += item.product.getSalesPrice(item.quantity);
 
         }
+
+        System.out.println("=".repeat(40));
+
+        System.out.printf("Final Total                   %.2f", total);
+
+
 
 
     }
