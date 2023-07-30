@@ -1,6 +1,12 @@
-import interfaces.FlightEnabled;
+import interfaces.Flight;
 
-public class Jet implements FlightEnabled {
+public class Jet extends FlightEnabled implements Flight {
+
+
+    @Override
+    public void flyingDevice(){
+        System.out.println(getClass().getSimpleName());
+    }
 
 
     @Override 

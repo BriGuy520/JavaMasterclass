@@ -1,11 +1,10 @@
 package interfaces;
 
-public interface FlightEnabled {
-
+public interface Flight {
+    
     void takeoff();
 
     void fly();
 
     void land();
-
 }
