@@ -1,7 +1,7 @@
 public abstract class ListItem {
 
-    protected ListItem leftLink;
-    protected ListItem rightLink;
+    protected ListItem leftLink = null;
+    protected ListItem rightLink = null;
     protected Object value;
 
     public ListItem(Object value){
@@ -10,19 +10,19 @@ public abstract class ListItem {
 
     abstract ListItem next();
 
-    abstract ListItem setNext(ListItem rightLink);
+    abstract boolean setNext(ListItem rightLink);
 
     abstract ListItem previous();
 
     abstract ListItem setPrevious(ListItem leftLink);
 
-    abstract void compareTo(ListItem value);
+    abstract int compareTo(ListItem value);
 
     public Object getValue(){
         return value;
     }
 
-    public void setValue(Object value){
+    public void setValue(int value){
         this.value = value;
     }
 

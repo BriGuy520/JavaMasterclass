@@ -10,8 +10,11 @@ public class Node extends ListItem {
     }
 
     @Override
-    public ListItem setNext(ListItem rightLink){
-        return rightLink;
+    public boolean setNext(ListItem item){
+
+        this.rightLink = item;
+
+        return true;
     }
 
     @Override
@@ -20,12 +23,18 @@ public class Node extends ListItem {
     }
 
     @Override
-    public ListItem setPrevious(ListItem leftLink){
+    public ListItem setPrevious(ListItem item){
+        this.leftLink = item;
         return leftLink;
     }
 
     @Override
-    public void compareTo(ListItem item){
+    public int compareTo(ListItem item){
 
+        if(this.value == item.value){
+            return 0;
+        } else {
+            return -1;
+        }
     }
 }

@@ -13,8 +13,21 @@ public class MyLinkedList implements NodeList {
 
     @Override
     public boolean addItem(ListItem item){
-        return true;
 
+        ListItem current = root;
+
+        while(current.rightLink != null){
+
+            if(current.value == item.value){
+                return false;
+            }
+            
+            current = current.rightLink;
+        }
+
+        current.setNext(item);
+
+        return true;
     }
 
     @Override
@@ -23,7 +36,14 @@ public class MyLinkedList implements NodeList {
     }
 
     @Override
-    public void traverse(ListItem root){
+    public void traverse(){
+
+        ListItem current = this.root;
+
+        while(current.rightLink != null){
+
+            System.out.printf("%d -> ", current.value);
+        }
     
     }
 }

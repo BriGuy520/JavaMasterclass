@@ -6,6 +6,6 @@ interface NodeList {
 
     boolean removeItem(ListItem item);
 
-    void traverse(ListItem root);
+    void traverse();
     
 }
