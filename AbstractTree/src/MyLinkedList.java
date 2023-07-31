@@ -17,11 +17,11 @@ public class MyLinkedList implements NodeList {
         ListItem current = this.getRoot();
 
 
-        while(current.rightLink != null){
+        while(current.next() != null){
 
             if(current.value == item.value) return false;
             
-            current = current.rightLink;
+            current = current.next();
         }
 
         if(current.value == item.value) return false;
@@ -46,7 +46,7 @@ public class MyLinkedList implements NodeList {
             
             System.out.printf("%d -> ", current.value);
             
-            current = current.rightLink;
+            current = current.next();
         }
 
         System.out.printf("%d %n", current.value);
