@@ -14,16 +14,17 @@ public class MyLinkedList implements NodeList {
     @Override
     public boolean addItem(ListItem item){
 
-        ListItem current = root;
+        ListItem current = this.getRoot();
+
 
         while(current.rightLink != null){
 
-            if(current.value == item.value){
-                return false;
-            }
+            if(current.value == item.value) return false;
             
             current = current.rightLink;
         }
+
+        if(current.value == item.value) return false;
 
         current.setNext(item);
 
@@ -38,12 +39,17 @@ public class MyLinkedList implements NodeList {
     @Override
     public void traverse(){
 
-        ListItem current = this.root;
-
+        ListItem current = this.getRoot();
+        
+     
         while(current.rightLink != null){
-
+            
             System.out.printf("%d -> ", current.value);
+            
+            current = current.rightLink;
         }
+
+        System.out.printf("%d %n", current.value);
     
     }
 }
