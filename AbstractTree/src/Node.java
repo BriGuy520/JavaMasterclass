@@ -1,7 +1,7 @@
 public class Node extends ListItem {
 
     public Node(Object value){
-        super(value, null, null);
+        super(value);
     }
     
     @Override 

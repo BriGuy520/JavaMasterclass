@@ -1,13 +1,11 @@
 public abstract class ListItem {
 
-    protected ListItem leftLink;
-    protected ListItem rightLink;
+    protected ListItem leftLink = null;
+    protected ListItem rightLink = null;
     protected Object value;
 
-    public ListItem(Object value, ListItem leftLink, ListItem rightLink){
+    public ListItem(Object value){
         this.value = value;
-        this.leftLink = null;
-        this.rightLink = null;
     }
 
     abstract ListItem next();
