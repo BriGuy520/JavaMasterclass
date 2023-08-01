@@ -1,6 +1,5 @@
 public class SearchTree implements NodeList {
 
-
     private ListItem root;
 
     public SearchTree(ListItem root){

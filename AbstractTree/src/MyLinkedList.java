@@ -11,8 +11,7 @@ public class MyLinkedList implements NodeList {
     public ListItem getRoot(){
         return root;
     }
-
-    @Override 
+ 
     public ListItem getTail(){
         return tail;
     }
@@ -78,7 +77,6 @@ public class MyLinkedList implements NodeList {
     
     }
 
-    @Override
     public void reverseTraverse(){
 
         ListItem current = this.getTail();
