@@ -19,9 +19,35 @@ public class SearchTree implements NodeList {
     public boolean addItem(ListItem item){
 
         ListItem current = this.getRoot();
-        
 
-        System.out.println(current.compareTo(item));
+        while(current != null){
+
+            int currentCompare = current.compareTo(item);
+
+            if(currentCompare == 1){
+
+                if(current.next() == null){
+                    current.setNext(item);
+                } else {
+                    current = current.next();
+                }
+
+            } else if(currentCompare == -1){
+
+                if(current.previous() == null){
+                    current.setPrevious(item);
+                } else {
+                    current = current.previous();
+                }
+
+            } else {
+
+                return false;
+            }
+
+
+        }
+
 
         return true;
     }
