@@ -31,10 +31,16 @@ public class Node extends ListItem {
     @Override
     public int compareTo(ListItem item){
 
-        if(this.value == item.value){
-            return 0;
-        } else {
-            return -1;
-        }
+     int passedInValue = (int) item.value;
+     int calledValue = (int) this.value;
+
+
+      if(passedInValue > calledValue){
+        return 1;
+      } else if(passedInValue == calledValue) {
+        return 0;
+      } else {
+        return -1;
+      }
     }
 }

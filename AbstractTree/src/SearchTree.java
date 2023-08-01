@@ -17,6 +17,12 @@ public class SearchTree implements NodeList {
 
     @Override
     public boolean addItem(ListItem item){
+
+        ListItem current = this.getRoot();
+        
+
+        System.out.println(current.compareTo(item));
+
         return true;
     }
 

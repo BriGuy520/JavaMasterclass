@@ -15,6 +15,10 @@ public class Main {
         list1.traverse();
         System.out.println();
         list1.reverseTraverse();
-        
+
+
+        SearchTree tree1 = new SearchTree(new Node(30));
+
+        tree1.addItem(new Node(39));
     }
 }
